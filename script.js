@@ -1,16 +1,14 @@
-//Selecionando os links de contraste
-var linksContraste = document.querySelectorAll('nav a[data-contraste]');
+const linksContraste = document.querySelectorAll('nav a[data-contraste]');
 
-//Function click passando o valor do data-contraste para a function contraste setar o Id no body
 linksContraste.forEach(linksContraste => linksContraste.addEventListener('click', function() {
-    var dataContraste = this.dataset.contraste; // pegando o data-contraste da tag 'a'
-    contraste(dataContraste); // Chamando  a function contraste com um parâmetro passado pelo data-contraste da tag 'a'
+    var dataContraste = this.dataset.contraste; 
+    contraste(dataContraste); 
   }
 ));
 
-function contraste(dataContraste) {
-  var setId;
-  //Verificação de qual contraste foi selecionado
+const contraste = (dataContraste) => {
+  let setId;
+
   if (dataContraste == 1) {
     setId = 'contrasteBranco';
   } else if (dataContraste == 2) {
@@ -27,12 +25,12 @@ function contraste(dataContraste) {
 }
 
 // Verificação do cookie
-var cookieContrasteBranco = document.cookie.indexOf('contrasteBranco');
-var cookieContrastePreto = document.cookie.indexOf('contrastePreto');
-var cookieContrasteAzul = document.cookie.indexOf('contrasteAzul');
+const cookieContrasteBranco = document.cookie.indexOf('contrasteBranco');
+const cookieContrastePreto = document.cookie.indexOf('contrastePreto');
+const cookieContrasteAzul = document.cookie.indexOf('contrasteAzul');
 
 //Verificando o cookie setado anteriormente
-var cookieTrue = '';
+let cookieTrue = '';
 if (cookieContrasteBranco != -1) {
   cookieTrue = 1;
 } else if (cookieContrastePreto != -1) {
@@ -42,12 +40,12 @@ if (cookieContrasteBranco != -1) {
 } else {
   cookieTrue = '';
 }
-//Chamando a function contraste com o valor do cookie guardado
+
 contraste(cookieTrue);
 
-function Enviar() {
+const Enviar = () => {
 
-    var nome = document.getElementById("nomeid");
+    const nome = document.getElementById("nomeid");
 
     if (nome.value != "") {
         alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
