@@ -93,7 +93,7 @@ html {
 }
 
 .navMenu a {
-  font-size: 11px;
+  font-size: 13px;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -137,7 +137,7 @@ html {
 
 .logo img {
   width: 100%;
-  max-width: 1015px;
+  max-width: 600px;
 }
 
 .footer {
@@ -246,6 +246,22 @@ html {
 	top:1px;
 }
 
+.card-link {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  width: 25%;
+  /* min-height: 42rem; */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;  
+  margin: 30px 10px;
+  background-color: #41454d;
+  color:#fff;
+}
+
 /* Responsivo  padding: 34% 0 16% 0;   */
 @media screen and (max-width: 370px) {
   .navControls {
@@ -314,15 +330,15 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 35%;
+  width: 40%;
   min-height: 28rem;
   margin: 30px 10px;
 }
 
 .perfil img {
   width: 100%;
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 180px;
+  max-height: 180px;
   border-radius: 50%;
 }
 
