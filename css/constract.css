@@ -1,0 +1,39 @@
+/*START - Contraste Branco*/
+
+#contrasteBranco .header nav,
+#contrasteBranco .header .active,
+#contrasteBranco .logo,
+#contrasteBranco .main,
+#contrasteBranco .main .card,
+#contrasteBranco .footer {
+  border-top: 1px solid #0a0a0a;
+  background-color: #FFFFFF;
+}
+
+#contrasteBranco .header nav ul li a,
+#contrasteBranco .header,
+#contrasteBranco .logo,
+#contrasteBranco .main,
+#contrasteBranco .main .card p,
+#contrasteBranco .footer {
+  color: #000000;
+}
+
+#contrasteBranco .header nav ul li a.contraste-active {
+  color: #FFFFFF;
+  background: #000000;
+}
+
+#contrasteBranco .header nav ul li a[data-contraste="1"],
+#contrastePreto .header nav ul li a[data-contraste="0"] {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+#contrasteBranco .logo .card {
+  border: 5px solid #000;
+}
+/*END - Contraste Branco*/
+
+
+/* faltam preto, azul */

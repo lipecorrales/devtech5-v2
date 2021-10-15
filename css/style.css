@@ -1,3 +1,4 @@
+/*Layout padrão*/
 * {
   margin: 0; 
   padding: 0; 
@@ -78,6 +79,10 @@ html {
   flex-direction: row; 
 }
 
+.navMenu ul, .navControls ul {
+  flex-wrap: wrap;
+}
+
 .navMenu ul li {
   list-style: none;  
   transition: all .5s;
@@ -130,11 +135,39 @@ html {
   padding: 12% 0 5% 0;
 }
 
-.logo img {   
-  width: 1015px;
-  height: 462px;
+.logo img {
+  width: 100%;
+  max-width: 1015px;
 }
 
+.footer {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #716e75;
+  color: #eaebec;
+  padding: 50px 0;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer ul li {
+  list-style: none;
+  padding: 50px 20px;
+}
+
+.footer ul li img {
+  width: 100px;
+  height: 100px;
+}
+
+/* index.html */
 .mainTitulo {
   background-color:#56c0e6;
   display: flex;
@@ -213,82 +246,156 @@ html {
 	top:1px;
 }
 
+/* Responsivo  padding: 34% 0 16% 0;   */
+@media screen and (max-width: 370px) {
+  .navControls {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .main {
+    padding: 34% 0 16% 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  div[vw].enabled {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navControls {
+    display: none;
+  }
+
+  .logo {
+    padding: 44% 0 16% 0;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .logo {
+    padding: 34% 0 16% 0;
+  }
+
+  .card {
+    width: 38%;
+  }
+}
+
 .audio audio{
+  width: 100%;
   padding: 2rem 0;
 }
 
-.footer {
+
+/* sobre.html */
+.sobre {
+  background-color: #282e3a;
+  padding: 12% 0 5% 0;
   display: flex;
-  flex-shrink: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fff;
+}
+
+.perfil {
+  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: #716e75;
-  color: #eaebec;
-  padding: 50px 0;
+  width: 35%;
+  min-height: 28rem;
+  margin: 30px 10px;
 }
 
-.footer ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.perfil img {
+  width: 100%;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
 }
 
-.footer ul li {
-  list-style: none;
-  padding: 50px 20px;
+.perfil h3 {
+  padding-top: 1rem;
 }
 
-.footer ul li img {
-  width: 100px;
-  height: 100px;
+.perfil h4 {
+  padding-bottom: 1rem;
+  font-size: 14px
+}
+
+.perfil p {
+  text-align: justify;
+}
+
+.btn-linkedin {
+  margin-top: 20px;
+  background: #0E76A8;
+  color: #fff;
+  border: 1px solid #084461;
+}
+
+.btn-linkedin:active, .btn-linkedin:hover {
+  background: #084461;
+  transition: all .5s;
+}
+
+.saibaMais {
+  padding: 12% 0 5% 0;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 329px) {
+  .sobre {
+    padding: 75% 0 5% 0;
+  }
+
+  .perfil {
+    width: 100%;
+  }
 }
 
 
+@media screen and (min-width: 330px) and (max-width: 499px) {
+  .sobre {
+    padding: 50% 0 5% 0;
+  }
 
-/*START - Contraste Branco*/
-
-#contrasteBranco .header nav,
-#contrasteBranco .header .active,
-#contrasteBranco .logo,
-#contrasteBranco .main,
-#contrasteBranco .main .card,
-#contrasteBranco .footer {
-  border-top: 1px solid #0a0a0a;
-  background-color: #FFFFFF;
+  .perfil {
+    width: 100%;
+  }
 }
 
-#contrasteBranco .header nav ul li a,
-#contrasteBranco .header,
-#contrasteBranco .logo,
-#contrasteBranco .main,
-#contrasteBranco .main .card p,
-#contrasteBranco .footer {
-  color: #000000;
+@media screen and (min-width: 500px) and (max-width: 650px) {
+  .sobre {
+    padding: 22% 0 5% 0;
+  }
+
+  .perfil {
+    width: 100%;
+  }
 }
 
-#contrasteBranco .header nav ul li a.contraste-active {
-  color: #FFFFFF;
-  background: #000000;
+@media screen and (min-width: 651px) and (max-width: 900px) {
+  .sobre {
+    padding: 30% 0 5% 0;
+  }
 }
-
-#contrasteBranco .header nav ul li a[data-contraste="1"],
-#contrastePreto .header nav ul li a[data-contraste="0"] {
-  background: #000000;
-  color: #FFFFFF;
-}
-
-#contrasteBranco .logo .card {
-  border: 5px solid #000;
-}
-/*END - Contraste Branco*/
-
-
-/* faltam preto, azul */
-
 
 /* Formulario simples */
-
+/* contato.html */
 .wrapperForm {
   display: flex;
   flex-direction: column;
@@ -296,7 +403,6 @@ html {
   align-items: center;
   padding: 12% 0 5% 0;
 }
-
 
 .form {
   max-width: 480px;
@@ -373,58 +479,10 @@ html {
   border-radius: 0%;
 }
 
-/* sobre */
-.sobre {
-  background-color: #282e3a;
-  padding: 12% 0 5% 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  color: #fff;
-}
+/* Responsivo */
 
-.perfil {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 35%;
-  min-height: 28rem;
-  margin: 30px 10px;
-}
-
-.perfil img {
-  width: 100%;
-  max-width: 150px;
-  max-height: 150px;
-  border-radius: 50%;
-}
-
-.perfil h3 {
-  padding-top: 1rem;
-}
-
-.perfil h4 {
-  padding-bottom: 1rem;
-  font-size: 14px
-}
-
-.perfil p {
-  text-align: justify;
-}
-
-.btn-linkedin {
-  margin-top: 20px;
-  background: #0E76A8;
-  color: #fff;
-  border: 1px solid #084461;
-}
-
-.btn-linkedin:active, .btn-linkedin:hover {
-  background: #084461;
-  transition: all .5s;
-}
-
-.saibaMais {
-  padding: 12% 0 5% 0;
+@media screen and (min-width: 350px) and (max-width: 960px) {
+  .wrapperForm {
+    padding: 34% 0 5% 0;
+  }
 }
