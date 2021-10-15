@@ -6,5 +6,5 @@ Grupo Desafio de Trabalho - COVID19
 
 - Philippe Corrales
 - Filipe Luiz
-- Jõao Guidugli
+- João Guidugli
 - Carlos Brandão Teixeira
