@@ -1,7 +1,7 @@
 const linksContraste = document.querySelectorAll('nav a[data-contraste]');
 
 linksContraste.forEach(linksContraste => linksContraste.addEventListener('click', function() {
-    var dataContraste = this.dataset.contraste; 
+    let dataContraste = this.dataset.contraste; 
     contraste(dataContraste); 
   }
 ));
@@ -43,15 +43,12 @@ if (cookieContrasteBranco != -1) {
 
 contraste(cookieTrue);
 
-const Enviar = () => {
+// Formulario
 
-    const nome = document.getElementById("nomeid");
+const form = document.querySelector('.form');
 
-    if (nome.value != "") {
-        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
-    }
+form.addEventListener('submit', function() {
+  alert(`Obrigado sr(a) ${event.target.name.value} os seus dados foram encaminhados com sucesso`)
+});
 
-}
-
-// Audio Basic //
 

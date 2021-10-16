@@ -21,7 +21,8 @@ html {
 
 .navWrapper {
   position: fixed;
-  width: 100vw; 
+  width: 100vw;
+  z-index: 1;
 }
 
 .navControls, .navMenu {
@@ -128,7 +129,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 9% 0 1% 0;
+  /* padding: 9% 0 1% 0; */
+  padding: calc(100vh - 485px) 0 1% 0;
 }
 
 .logo img {
@@ -172,6 +174,7 @@ html {
 }
 
 .titulo{
+  width: 100%;
   display: flex;
   justify-content: center; /* Centraliza o texto horizontalmente */
   align-items: center; /* Centraliza as linhas verticalmente */
@@ -231,8 +234,9 @@ html {
 
 .card {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  align-content: space-between;
+  flex-wrap: wrap;
   /* flex-grow: 1; */
   width: 25%;
   min-height: 42rem;
@@ -259,7 +263,7 @@ html {
   padding-bottom: 2rem;
 }
 
-button {
+.button-link {
 	box-shadow:inset 0px 1px 3px 0px #91b8b3;
 	background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
 	background-color:#768d87;
@@ -274,8 +278,6 @@ button {
 	padding:11px 23px;
 	text-decoration:none;
 	text-shadow:0px -1px 0px #2b665e;
-  align-items: flex-end;
-  
 }
 
 .card button:hover {
@@ -289,11 +291,13 @@ button {
 
 .card-link {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  align-content: space-between;
+  flex-wrap: wrap;
   /* flex-grow: 1; */
   width: 25%;
-  min-height: 15rem;
+  min-height: 12rem;
+  height: 100%;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -304,10 +308,11 @@ button {
 }
 
 .card-link h2 {
+  font-size: 18px;
   padding: 20px 30px;
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 380px) {
   .navControls {
     display: none;
   }
@@ -317,7 +322,7 @@ button {
   }
 
   .main {
-    padding: 34% 0 16% 0;
+    padding: calc(100vh - 516px) 0 1% 0;
   }
 
   .card, .card-link {
@@ -329,13 +334,9 @@ button {
   }
 }
 
-@media screen and (max-width: 650px) {
-  .navControls {
-    display: none;
-  }
-
+@media screen and (max-width: 485px) {
   .logo {
-    padding: 44% 0 16% 0;
+    padding: calc(100vh - 526px) 0 1% 0;
   }
 
   .card, .card-link {
@@ -344,10 +345,6 @@ button {
 }
 
 @media screen and (min-width: 650px) and (max-width: 960px) {
-  .logo {
-    padding: 34% 0 16% 0;
-  }
-
   .card, .card-link {
     width: 38%;
   }
@@ -356,7 +353,6 @@ button {
 .audio audio{
   width: 100%;
   padding: 3rem 0;
-    
   display: flex;
   justify-content: center;
   align-items: center;
@@ -376,13 +372,14 @@ button {
 
 /* sobre.html */
 .sobre {
-  background-color: #ffffff;
+  background-color: #eaebec;
   padding-top: 5%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   color: rgb(0, 0, 0);
+  padding: calc(100vh - 440px) 0 1% 0;
 }
 
 .perfil {
@@ -391,7 +388,7 @@ button {
   align-items: center;
   width: 40%;
   min-height: 29rem;
-  margin: 25px 9px;
+  margin: 25px 40px;
 }
 
 .perfil img {
@@ -452,14 +449,17 @@ button {
 /* Formulario simples */
 /* contato.html */
 .wrapperForm {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 3%;
+  padding: calc(100vh - 440px) 0 1% 0;
 }
 
 .form {
+  width: 100%;
   max-width: 480px;
   /* border-top: 5px solid #0e3721; */
 }
@@ -521,3 +521,14 @@ button {
   border-radius: 0%;
 }
 
+/* saiba Mais */
+
+.saibaMais {
+  background-color: #eaebec;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+  padding: calc(100vh - 440px) 0 1% 0;
+}

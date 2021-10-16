@@ -34,20 +34,16 @@
         </div>        
       </header>
       <!--Fim Barra Nav--> 
-      <br><br><br><br><br><br><br><br>
-      
-      <div class="titulo">
-        <span>Entre em contato conosco</span>
-      </div>
-      
-      <main class="wrapperForm">          
-        <form class="form">
+  
+      <main class="wrapperForm">
+        <h1 class="titulo">Entre em contato conosco</h1>      
+        <form class="form" method="GET">
           <!-- <div class="pageTitle title">Entre em contato conosco! </div> -->
           <div class="secondaryTitle title">Envie uma mensagem para o nosso equipe com sua dúvida, crítica ou sugestão..</div>
-          <input type="text" class="name formEntry" placeholder="Nome" required/>
-          <input type="text" class="email formEntry" placeholder="E-mail" required/>
-          <textarea class="message formEntry" placeholder="Mensagem" required></textarea>
-          <button class="submit formEntry" onclick="thanks()">Enviar</button>
+          <input name="name" type="text" class="name formEntry" placeholder="Nome" required/>
+          <input name="email" type="text" class="email formEntry" placeholder="E-mail" required/>
+          <textarea name="msg" class="message formEntry" placeholder="Mensagem" required></textarea>
+          <input class="submit formEntry" type="submit" value="Enviar">
         </form>
       </main><br>
     
@@ -72,12 +68,12 @@
         <div class="vw-plugin-top-wrapper"></div>
       </div>
     </div>
-    <script type="text/javascript" src="js/contraste.js"></script>
+    <!-- <script type="text/javascript" src="js/contraste.js"></script> -->
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js "></script>
     <script>
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
-    <script  src="./script.js"></script>
+    <script  src="./js/script.js"></script>
   </body>
 </html>
 
