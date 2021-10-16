@@ -165,9 +165,13 @@ html {
 
 /* Inicio Paginas no Titulo */
 
+.MiniNotice{
+  text-align:left;
+}
+
 .titulo{
   display: flex;
-  justify-content: center; /* Centraliza o testo horizontalmente */
+  justify-content: center; /* Centraliza o texto horizontalmente */
   align-items: center; /* Centraliza as linhas verticalmente */
   margin: 30px 0; /* 30px -> margens superior e inferior */
 }
@@ -237,6 +241,7 @@ html {
   margin: 30px 10px;
   background-color: #41454d;
   color:#fff;
+  text-align: left;
 }
 
 .card:hover {
