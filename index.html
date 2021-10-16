@@ -11,32 +11,23 @@
   </head>
   <body>
     <div class="container">
-
       <header class="header">
         <div class="navWrapper">
           <nav class="navControls">
             <ul>
-              <li><a href="#content" title="Ir para o Conteúdo">Ir para o Conteúdo</a></li>
               <li><a href="#top" title="Ir para o Topo">Ir para o Topo</a></li>
               <li><a href="#footer" title="Ir para o Rodapé">Ir para o Rodapé</a></li>
               <li><a href="#" data-contraste="0" title="Sem Contraste">Sem Contraste</a></li>
-              <li><a href="#" data-contraste="1" title="Contraste Branco">Contraste Branco</a></li>
-              <li><a href="#" data-contraste="2" title="Contraste Preto">Contraste Preto</a></li>
-              <li><a href="#" data-contraste="3" title="Contraste Azul">Contraste Azul</a></li>
+              <li><a href="#" data-contraste="1" title="Contraste Branco">Contraste Branco</a></li>            
             </ul>
           </nav> 
-          
           <nav class="navMenu">
             <ul>
               <li class="active"><a href="index.html">Home</a></li>
               <li><a href="sobre.html">Sobre</a></li>
               <li><a href="contato.html">Contato</a></li>
               <li><a href="saibamais.html">Saiba Mais</a></li>
-            </ul>
-            <form action="#" method="get">
-              <input type="text" name="search">
-              <button type="submit">Pesquisar</button>
-            </form>
+            </ul>            
           </nav>
         </div>
         <div id="top" class="logo">
@@ -44,8 +35,11 @@
         </div>
       </header>
 
-      <main class="main">
-        <h2 id="content" class="mainTitulo">NOTÍCIAS</h2>
+      <div class="titulo">
+        <span>Notícias</span>
+      </div>
+
+      <main class="main">        
         <section class="card">
           <h3>Crise da pandemia da Covid-19</h3>
           <img src="img/crise.jpg" alt="">
@@ -109,9 +103,12 @@
         
         <section class="card audio">
           <h3>Mensagens de áudio da UNESCO-OMS contra a COVID-19.</h3>
-          <audio controls>
-            <source src="img/covid-19vaccine_message1_1_pt.mp3" type="audio/mpeg">
-          </audio>
+          
+            <audio controls autoplay muted>
+              <source src="horse.ogg" type="audio/ogg">
+              <source src="img/covid-19vaccine_message1_1_pt.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
           <p class="MiniNotice">
             As mensagens de áudio podem ser acessadas gratuitamente e transmitidas por estações de rádio públicas, privadas e comunitárias em várias partes do mundo.
           </p>

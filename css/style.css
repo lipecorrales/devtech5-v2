@@ -124,16 +124,16 @@ html {
 }
 
 .logo {
-  background-color: #56c0e6;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12% 0 5% 0;
+  padding: 9% 0 1% 0;
 }
 
 .logo img {
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 .footer {
@@ -144,7 +144,7 @@ html {
   align-items: center;
   background-color: #716e75;
   color: #eaebec;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .footer ul {
@@ -162,6 +162,34 @@ html {
   width: 100px;
   height: 100px;
 }
+
+/* Inicio Paginas no Titulo */
+
+.titulo{
+  display: flex;
+  justify-content: center; /* Centraliza o testo horizontalmente */
+  align-items: center; /* Centraliza as linhas verticalmente */
+  margin: 30px 0; /* 30px -> margens superior e inferior */
+}
+
+.titulo::before,
+.titulo::after{
+   content: '';
+   position: relative;
+   height: 1px; /* espessura das linhas */
+   background: #666; /* cor das linhas */
+   min-width: 50px; /* largura mínima das linhas */
+   flex-grow: 1; /* distribui a largura das linhas por igual */
+}
+
+.titulo span{
+   color: rgb(0, 0, 0); /* cor do texto */
+   padding: 0 15px; /* distancia do texto às linhas */
+   font-weight: bold; /* negrito */
+   font-size: 2em; /* tamanho do texto */
+}
+
+/* Fim Paginas no Titulo */
 
 /* index.html */
 .mainTitulo {
@@ -324,13 +352,13 @@ button {
 
 /* sobre.html */
 .sobre {
-  background-color: #282e3a;
+  background-color: #ffffff;
   padding-top: 5%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .perfil {
@@ -404,12 +432,12 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 5%;
+  padding-top: 3%;
 }
 
 .form {
   max-width: 480px;
-  border-top: 5px solid #0e3721;
+  /* border-top: 5px solid #0e3721; */
 }
 
 .title{
