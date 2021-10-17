@@ -309,7 +309,7 @@ html {
 
 .card-link h2 {
   font-size: 18px;
-  padding: 20px 30px;
+  padding: 10px 30px;
 }
 
 @media screen and (max-width: 380px) {
@@ -423,6 +423,31 @@ html {
 }
 
 .btn-linkedin:active, .btn-linkedin:hover {
+  background: #084461;
+  transition: all .5s;
+}
+
+.btn-github {
+  flex-direction: column;
+  margin-top: 20px;
+  background: #000000;
+  color: #fff;
+  border: 1px solid #084461;
+}
+
+.btn-github:active, .btn-github:hover {
+  background: #084461;
+  transition: all .5s;
+}
+
+.btn-emailcontato {
+  margin-top: 20px;
+  background: #000000;
+  color: #fff;
+  border: 1px solid #084461;
+}
+
+.btn-emailcontato:active, .btn-emailcontato:hover {
   background: #084461;
   transition: all .5s;
 }
