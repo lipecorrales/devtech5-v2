@@ -4,7 +4,10 @@
 #contrasteBranco .header .active,
 #contrasteBranco .logo,
 #contrasteBranco .main,
-#contrasteBranco .main .card,
+#contrasteBranco .sobre,
+#contrasteBranco .saibaMais,
+#contrasteBranco .card,
+#contrasteBranco .card-link,
 #contrasteBranco .footer {
   border-top: 1px solid #0a0a0a;
   background-color: #FFFFFF;
@@ -14,7 +17,10 @@
 #contrasteBranco .header,
 #contrasteBranco .logo,
 #contrasteBranco .main,
-#contrasteBranco .main .card p,
+#contrasteBranco .card h2,
+#contrasteBranco .card-link h2,
+#contrasteBranco .card p,
+#contrasteBranco .card-link p,
 #contrasteBranco .footer {
   color: #000000;
 }
