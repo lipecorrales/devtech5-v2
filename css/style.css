@@ -130,7 +130,7 @@ html {
   justify-content: center;
   align-items: center;
   /* padding: 9% 0 1% 0; */
-  padding: calc(100vh - 485px) 0 1% 0;
+  padding: 140px 0 1% 0;
 }
 
 .logo img {
@@ -308,46 +308,9 @@ html {
 }
 
 .card-link h2 {
+  width: 100%;
   font-size: 18px;
   padding: 10px 30px;
-}
-
-@media screen and (max-width: 380px) {
-  .navControls {
-    display: none;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .main {
-    padding: calc(100vh - 516px) 0 1% 0;
-  }
-
-  .card, .card-link {
-    width: 100%;
-  }
-
-  div[vw].enabled {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 485px) {
-  .logo {
-    padding: calc(100vh - 526px) 0 1% 0;
-  }
-
-  .card, .card-link {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 650px) and (max-width: 960px) {
-  .card, .card-link {
-    width: 38%;
-  }
 }
 
 .audio audio{
@@ -379,8 +342,16 @@ html {
   flex-wrap: wrap;
   align-items: center;
   color: rgb(0, 0, 0);
-  padding: calc(100vh - 440px) 0 1% 0;
+  padding: 133px 0 1% 0;
 }
+
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
 
 .perfil {
   display: flex;
@@ -411,7 +382,12 @@ html {
   text-align: justify;
 }
 
+.perfil a {
+  margin-right: 10px;
+}
+
 .perfil i {
+  width: 100%;
   font-size: 30px;
 }
 
@@ -452,25 +428,6 @@ html {
   transition: all .5s;
 }
 
-/* Responsivo */
-@media screen and (max-width: 329px) {
-  .perfil {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 330px) and (max-width: 499px) {
-  .perfil {
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 500px) and (max-width: 650px) {
-  .perfil {
-    width: 100%;
-  }
-}
-
 /* Formulario simples */
 /* contato.html */
 .wrapperForm {
@@ -480,7 +437,7 @@ html {
   justify-content: center;
   align-items: center;
   padding-top: 3%;
-  padding: calc(100vh - 440px) 0 1% 0;
+  padding: 133px 0 1% 0;
 }
 
 .form {
@@ -551,9 +508,79 @@ html {
 .saibaMais {
   background-color: #eaebec;
   display: flex;
+  flex: 1;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;  
-  padding: calc(100vh - 440px) 0 1% 0;
+  padding: 133px 0 1% 0;
+}
+
+/* Responsivo */
+
+@media screen and (max-width: 329px) {
+  .perfil {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .navControls {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .main {
+    padding: 150px 0 1% 0;
+  }
+
+  .card, .card-link {
+    width: 100%;
+  }
+
+  div[vw].enabled {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .logo {
+    padding: 191px 0 1% 0;
+  }
+
+  .sobre, .wrapperForm, .saibaMais {
+    padding: 191px 0 1% 0;
+  }
+
+  .card, .card-link {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .card {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 330px) and (max-width: 499px) {
+  .perfil {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 650px) {
+  .perfil {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .card, .card-link {
+    width: 38%;
+  }
 }
