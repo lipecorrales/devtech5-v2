@@ -351,8 +351,17 @@ html {
   flex-direction: row;
   justify-content: center;
   padding-bottom: 20px;
+  margin: 10px;
 }
 
+
+#efeito-img{position:relative;top:0;
+  transition: all .2s ease-in-out}
+#efeito-img:hover{top:-4px;box-shadow:0 4px 3px #999}
+
+#efeito-btn{position:relative;top:0;
+  transition: all .2s ease-in-out}
+#efeito-btn:hover{top:-4px;box-shadow:0 4px 3px #999}
 
 .perfil {
   display: flex;
@@ -360,7 +369,7 @@ html {
   align-items: center;
   width: 40%;
   min-height: 29rem;
-  margin: 25px 40px;
+  margin: 30px 40px;  
 }
 
 .perfil img {
@@ -368,11 +377,12 @@ html {
   max-width: 180px;
   max-height: 180px;
   border-radius: 50%;
-  box-shadow: black 5px 5px 20px;
+  /* box-shadow: black 5px 5px 20px; */
 }
 
-.perfil h3 {
+.perfil h2, .perfil h3 {
   padding-top: 1rem;
+  line-height: 1.0;
 }
 
 .perfil h4 {
@@ -393,42 +403,30 @@ html {
   font-size: 30px;
 }
 
-.btn-linkedin {
-  margin-top: 20px;
-  background: #0E76A8;
-  color: #fff;
-  border: 1px solid #084461;
+/* Button Redes Sociais */
+.btn btn-github btn-lg, .btn btn-linkedin btn-lg {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;   
 }
 
-.btn-linkedin:active, .btn-linkedin:hover {
-  background: #084461;
-  transition: all .5s;
+i:hover {
+  color: #AEC6CF;
+  transition: 0.4s;
+  cursor: pointer;  
+	-webkit-box-shadow: 1px 1px 3px #333;
+	-moz-box-shadow: 1px 1px 3px #333;
+	box-shadow: 1px 1px 3px #333; 
 }
 
-.btn-github {
-  flex-direction: column;
-  margin-top: 20px;
-  background: #000000;
-  color: #fff;
-  border: 1px solid #084461;
-}
-
-.btn-github:active, .btn-github:hover {
-  background: #084461;
-  transition: all .5s;
-}
-
-.btn-emailcontato {
-  margin-top: 20px;
-  background: #000000;
-  color: #fff;
-  border: 1px solid #084461;
-}
-
-.btn-emailcontato:active, .btn-emailcontato:hover {
-  background: #084461;
-  transition: all .5s;
-}
+/* Fim Button Redes Sociais */
 
 /* Formulario simples */
 /* contato.html */
